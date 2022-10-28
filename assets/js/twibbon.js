@@ -16,6 +16,7 @@ function drawImage() {
   var picture = document.getElementById('preview');
   var canvas = document.getElementById('twibbonbaker');
   var context = canvas.getContext('2d');
+  var x = document.getElementById("fileInput").required;
 
   canvas.width = 1080;
   canvas.height = 1080;
