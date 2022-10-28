@@ -14,9 +14,9 @@ function drawImage() {
   var picture = new Image();
   var twibbon = document.getElementById('twibbon');
   var picture = document.getElementById('preview');
-  var canvas = document.getElementById('twibbonbaker');
+  var canvas = document.getElementById('susahcebok');
   var context = canvas.getContext('2d');
-  var x = document.getElementById("fileInput").required;
+  
 
   canvas.width = 1080;
   canvas.height = 1080;
@@ -28,9 +28,9 @@ function drawImage() {
 
   console.log("Drew!");
 
-  $('#dpwload').css('display', 'none');
-  $('#dpwload2').css('display', 'inline-block');
-  $('#dpwload2').attr('href', hasil);
+  $('#pratinjau').css('display', 'none');
+  $('#unduh').css('display', 'inline-block');
+  $('#unduh').attr('href', hasil);
 }
 
 $("#fileInput").change(function() {
