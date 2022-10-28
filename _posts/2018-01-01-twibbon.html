@@ -15,16 +15,16 @@ date:   2018-01-01 21:15:40 +0300
 
 <p>Pastikan gambar yang di upload memiliki ukuran</p>
 
-<form>
+
 <label class="upload">
-<input id="fileInput" type="file" onChange="uploadImage(this)" required/>
+<input id="fileInput" type="file" onChange="uploadImage(this)" multiple/>
 </label>
-</form>
+
 <span id="error"></span>
-<canvas id="twibbonbaker" style="width: 300px; height: 300px; display: none"></canvas>
+<canvas id="susahcebok" style="width: 300px; height: 300px; display: none"></canvas>
 <br>
-<button id="dpwload" onclick="drawImage()">Pratinjau</button>
-<a href='#' id="dpwload2" download="download.png" style="display: none">Download twibbon!</a>
+<button id="pratinjau" onclick="drawImage()">Pratinjau</button>
+<a href='#' id="unduh" download="download.png" style="display: none">Download twibbon!</a>
 <button id="cancel" onclick="location.reload()">Cancel</button>
 
 <script type="text/javascript" src='/assets/js/twibbon.js'></script>
