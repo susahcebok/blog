@@ -44,7 +44,7 @@ img,canvas {
         line-height: 21px;
 }
 .upload::after {
-        content: "✓";
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
