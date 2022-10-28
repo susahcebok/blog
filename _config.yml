@@ -1,7 +1,7 @@
-name: "Jekyll true minimal theme"
-description: "Lightweight theme"
+name: "Just Another A Blog"
+description: "The Man, The Legend"
 
-url: 'https://susahcebok.github.io/blog/' 
+url: 'https://susahcebok.github.io/blog' 
 baseurl: ''
 
 markdown: kramdown
