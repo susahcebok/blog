@@ -21,12 +21,7 @@ footer {
 img,canvas {
         width: 100%;
         height: auto;
-        padding:4px;
-        background-color:#fff;
         border: 1px solid #b2b2b2;
-        -webkit-box-shadow: 3px 3px 4px rgba(50, 50, 50, 0.75);
-        -moz-box-shadow:    3px 3px 4px rgba(50, 50, 50, 0.75);
-        box-shadow:         3px 3px 4px rgba(50, 50, 50, 0.75);
 }
 .upload {
         position: relative;
