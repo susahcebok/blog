@@ -5,7 +5,7 @@ body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         
     }
-article,footer {
+article {
         width: 600px;
         margin: 5em auto;
         padding: 2em;
@@ -18,7 +18,7 @@ a:link, a:visited {
         text-decoration: none;
     }
 @media (max-width: 700px) {
-article {
+article,footer {
         margin: 0 auto;
         width: auto;
         }
