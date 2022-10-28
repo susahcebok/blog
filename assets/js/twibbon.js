@@ -42,7 +42,7 @@ function uploadImage(_this) {
   var fileType = file["type"];
   var validImageTypes = ["image/gif", "image/jpeg", "image/png"];
   if ($.inArray(fileType, validImageTypes) < 0) {
-       alert('Please select an image! Fill is not an image')
+       alert('<div class="alert alert-success">Please select an image! Fill is not an image!</div>')
        _this.form.reset()
   } else {
     alert('All good')
