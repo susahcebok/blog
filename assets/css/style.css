@@ -15,7 +15,7 @@ article {
     }
 footer {
         width: 600px;
-        margin: 5em auto;
+        margin: 0;
         padding: 0;
     }
 a:link, a:visited {
