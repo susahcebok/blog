@@ -43,7 +43,6 @@ function uploadImage(_this) {
   var validImageTypes = ["image/gif", "image/jpeg", "image/png"];
   if ($.inArray(fileType, validImageTypes) < 0) {
        Swal.fire(
-            icon: 'error',
             'Error!',
             'Please select an image! Fill is not an image!',
             'danger'
@@ -51,12 +50,12 @@ function uploadImage(_this) {
    //    alert('<div class="alert alert-success">Please select an image! Fill is not an image!</div>')
        _this.form.reset()
   } else {
- //   Swal.fire(
+    Swal.fire(
          'Good job!',
          'You clicked the button!',
          'success'
          )
-    alert('All good')
+ //   alert('All good')
      //do something
   }
 }
