@@ -16,8 +16,7 @@ article {
 footer {
         width: 600px;
         margin: 5em auto;
-        padding: 1em;
-        border-radius: 0.5em;
+        padding: 3em;
     }
 a:link, a:visited {
         color: #38488f;
