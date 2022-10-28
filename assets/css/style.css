@@ -22,6 +22,48 @@ img,canvas {
         width: 100%;
         height: auto;
 }
+.upload {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        box-sizing: border-box;
+        color: #666;
+        border: solid 1px #ccc;
+        background-color: #fefefe;
+}
+.upload::before {
+        content: "+";
+        height: 100%;
+        width: 30px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        color: #666;
+        text-align: center;
+        line-height: 21px;
+}
+.upload::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+}
+.upload [type="file"] {
+       width: 100%;
+       padding: 3px;
+       box-sizing: border-box;
+}
+.upload [type="file"]::-webkit-file-upload-button {
+       -webkit-appearance: none;
+       width: 0;
+       height: 0;
+       padding: 0;
+       border: 0;
+}
 a:link, a:visited {
         color: #38488f;
         text-decoration: none;
