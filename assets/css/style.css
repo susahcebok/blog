@@ -19,7 +19,7 @@ a:link, a:visited {
     }
 @media (max-width: 700px) {
 article {
-            margin: 0 auto;
-            width: auto;
+        margin: 0 auto;
+        width: auto;
         }
     }
