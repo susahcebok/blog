@@ -21,7 +21,6 @@ footer {
 img,canvas {
         width: 100%;
         height: auto;
-        border: 1px solid #b2b2b2;
 }
 .upload {
         position: relative;
