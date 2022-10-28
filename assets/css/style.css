@@ -21,14 +21,6 @@ footer {
 img,canvas {
         width: 100%;
         height: auto;
-}
-.image-frame {
-        position:relative;
-        z-index:1;
-        display:inline-block;
-}
-
-.image-frame img {
         padding:4px;
         background-color:#fff;
         border: 1px solid #b2b2b2;
