@@ -1,7 +1,7 @@
 name: "Just Another A Blog"
 description: "The Man, The Legend"
 
-url: 'https://susahcebok.github.io/blog' 
+url: '' 
 baseurl: ''
 
 markdown: kramdown
