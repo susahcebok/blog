@@ -9,17 +9,16 @@ date:   2018-02-02 12:26:40 +0300
 <p>Pembuat kode QR yang mudah. Buat kode QR dalam dua klik: unggah tautan Anda, hasilkan QR, dan unduh!</p>
 
 <p>
-<div class="form">
-<div class="input-flex">
-<input type="text" placeholder="Enter text or url">
-<img id="clearBtn" src="https://s2.svgbox.net/materialui.svg?ic=clear&color=edd" width="32" height="32">
-</div>
-<button>Generate QR Code</button>
-</div>
 
-<div class="qr-code">
-<img src="" alt="">
-</div>
+<form>
+<input type="text" placeholder="Enter a Text Or URL" />
+<button class="gen-btn" type="button">Generate</button>
+</form>
+
+<p class="qr-code hidden">
+<img class="qr" src="#" />
+</p>
+
 </p>
 
 <script src='/assets/js/qrcode.js'></script>
