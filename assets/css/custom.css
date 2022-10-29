@@ -1,3 +1,5 @@
+/* button.css */
+
 *:focus{
   outline:0;
 }
@@ -92,4 +94,10 @@
 }
 .btn.black:hover{
   background: #222;
+}
+.btn.red{
+  background: #FF6464;
+}
+.btn.red:hover{
+  background: #FF7D7D;
 }
