@@ -150,11 +150,11 @@ flex-grow: 0;
  flex-basis: auto;
 }
 #my-text {
-    padding: 0px;
+    padding: 0px 0;
     border: 1px solid #111;
     border-radius: 4px;
     background: #eee;
-    min-height:2rem;
+    min-height:3rem;
   width:100%;
   font-size:18px;
   margin:10px 0;
