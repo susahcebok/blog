@@ -101,3 +101,12 @@
 .btn.red:hover{
   background: #FF7D7D;
 }
+fieldset {
+  padding: 15px;
+  border-radius: 5px;
+}
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
