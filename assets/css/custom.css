@@ -101,12 +101,60 @@
 .btn.red:hover{
   background: #FF7D7D;
 }
-fieldset {
-  padding: 15px;
-  border-radius: 5px;
+/* QR COde Css */
+
+.container {
+  width: 100%;
+  background: #ffff;
+  border-radius: 10px;
+  padding: 25px;
 }
-legend {
-  background-color: #000;
-  color: #fff;
-  padding: 3px 6px;
+
+.container .info h1 {
+  margin-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container .info p {
+  font-size: 13px;
+}
+
+.container form {
+  margin: 15px 0 25px;
+}
+
+.container form :where(input, button) {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container form input {
+  border: 1px solid #9999;
+  width: 100%;
+}
+
+.container form .gen-btn {
+  color: #ffff;
+  cursor: pointer;
+}
+
+.container form .gen-btn {
+  background: pink;
+  width: 100%;
+}
+
+.container .qr-code {
+  border: 1px solid #9999;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  transition: display 1s;
+}
+
+.hidden {
+  display: none;
 }
