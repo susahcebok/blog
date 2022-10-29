@@ -124,6 +124,7 @@ input {
 
 .textfields{
   width:100%;
+  max-width:500px;
   margin: 0 auto
 }
 .row{
@@ -149,14 +150,14 @@ flex-grow: 0;
  flex-basis: auto;
 }
 #my-text {
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #111;
     border-radius: 4px;
     background: #eee;
-    min-height:3rem;
+    min-height:2rem;
   width:100%;
   font-size:18px;
-  margin:20px 0;
+  margin:15px 0;
 }
 
 .name, .font-generator-kaomoji-kuma p{
