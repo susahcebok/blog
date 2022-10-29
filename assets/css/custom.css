@@ -150,14 +150,14 @@ flex-grow: 0;
  flex-basis: auto;
 }
 #my-text {
-    padding: 5px 0;
+    padding: 5px 1;
     border: 1px solid #111;
     border-radius: 4px;
     background: #eee;
     min-height:3rem;
   width:100%;
   font-size:18px;
-  margin:5px 0;
+  margin:10px 0;
 }
 
 .name, .font-generator-kaomoji-kuma p{
