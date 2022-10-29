@@ -118,7 +118,7 @@ form :where(input, button) {
 
 form input {
   border: 1px solid #9999;
-  width: 100px;
+  width: 300px;
 }
 
 form .gen-btn {
