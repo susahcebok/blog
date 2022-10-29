@@ -152,7 +152,7 @@ flex-grow: 0;
 #my-text {
     padding: 10px;
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #eee;
     min-height:2rem;
   width:100%;
