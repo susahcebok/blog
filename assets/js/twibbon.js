@@ -36,26 +36,3 @@ function drawImage() {
 $("#fileInput").change(function() {
   readURL(this);
 });
-
-function uploadImage(_this) {
-  var file = _this.files[0];
-  var fileType = file["type"];
-  var validImageTypes = ["image/gif", "image/jpeg", "image/png"];
-  if ($.inArray(fileType, validImageTypes) < 0) {
-       Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Please select an image! Fill is not an image!',
-            })
-   //    alert('<div class="alert alert-success">Please select an image! Fill is not an image!</div>')
-       _this.form.reset()
-  } else {
-    Swal.fire(
-         'Good job!',
-         'You clicked the button!',
-         'success'
-         )
- //   alert('All good')
-     //do something
-  }
-}
