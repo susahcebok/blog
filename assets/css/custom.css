@@ -104,7 +104,6 @@
 
 /* QR COde Css */
 
-
 form {
   margin: 15px 0 25px;
 }
@@ -115,7 +114,6 @@ form :where(input, button) {
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
-  font-size: 16px;
 }
 
 form input {
@@ -129,7 +127,7 @@ form .gen-btn {
 }
 
 form .gen-btn {
-  background: pink;
+  background: blue;
   width: 100%;
 }
 
