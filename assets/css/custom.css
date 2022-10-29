@@ -150,7 +150,7 @@ flex-grow: 0;
  flex-basis: auto;
 }
 #my-text {
-    padding: 0 0 5px;
+    padding: 5px 0 5px;
     border: 1px solid #111;
     border-radius: 4px;
     background: #eee;
