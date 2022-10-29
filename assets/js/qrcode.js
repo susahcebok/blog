@@ -1,24 +1,23 @@
-const mainContainer = document.querySelector(".container");
-const qrBtn = mainContainer.querySelector(".form button");
-const qrInput = mainContainer.querySelector(".form input");
-const qrImg = mainContainer.querySelector(".qr-code img");
-const clearBtn = mainContainer.querySelector('.form #clearBtn');
+const genBtn = document.querySelector(".gen-btn");
+const qrCodeBox = document.querySelector(".qr-code");
+const input = document.querySelector("input");
+const image = document.querySelector(".qr");
 
-clearBtn.addEventListener('click',() => {
-  if(!qrInput.value) return;
-  else {
-    qrInput.value = '';
-    mainContainer.classList.remove("active");
+genBtn.addEventListener("click", () => {
+  let inputValue = input.value;
+  if (!inputValue) {
+    return alert("Please enter a text or URL!");
   }
-})
-
-qrBtn.addEventListener("click", () => {
-  let _value = qrInput.value;
-  if (!_value) {
-    alert("Enter url or text!!!");
-  } else {
-    qrImg.src = `https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=350x350&chl=${_value}`;
-    mainContainer.classList.toggle("active");
-  }
+  genBtn.innerHTML = 'Converting <i class="fa-solid fa-sync fa-spin"></i>';
+  image.src = `https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=350x350&chl=${inputValue}`;
+  image.addEventListener("load", () => {
+    qrCodeBox.classList.remove("hidden");
+    genBtn.innerText = "Generate";
+  });
+  input.addEventListener("keyup", () => {
+    if (!input.value) {
+      qrCodeBox.classList.add("hidden");
+      saveBtn.classList.add("hidden");
+    }
+  });
 });
-
