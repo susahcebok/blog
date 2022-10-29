@@ -124,7 +124,6 @@ input {
 
 .textfields{
   width:100%;
-  max-width:500px;
   margin: 0 auto
 }
 .row{
@@ -156,6 +155,7 @@ flex-grow: 0;
     background: #eee;
     min-height:3rem;
   width:100%;
+  font-size:18px;
   margin:20px 0;
 }
 
