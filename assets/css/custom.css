@@ -104,27 +104,12 @@
 
 /* QR COde Css */
 
-.container {
-  width: 300px;
-  background: #ffff;
-  border-radius: 10px;
-  padding: 25px;
-}
 
-.container .info h1 {
-  margin-bottom: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.container .info p {
-  font-size: 13px;
-}
-
-.container form {
+form {
   margin: 15px 0 25px;
 }
 
-.container form :where(input, button) {
+form :where(input, button) {
   outline: 0;
   border: 0;
   border-radius: 5px;
@@ -133,22 +118,22 @@
   font-size: 16px;
 }
 
-.container form input {
+form input {
   border: 1px solid #9999;
   width: 100%;
 }
 
-.container form .gen-btn {
+form .gen-btn {
   color: #ffff;
   cursor: pointer;
 }
 
-.container form .gen-btn {
+form .gen-btn {
   background: pink;
   width: 100%;
 }
 
-.container .qr-code {
+.qr-code {
   border: 1px solid #9999;
   border-radius: 5px;
   text-align: center;
