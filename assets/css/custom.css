@@ -104,32 +104,35 @@
 
 /* QR COde Css */
 
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 10px 14px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.226);
+.row {
+  display: flex;
+  align-items: center;
 }
 
-.box input {
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    padding-right: 12px;
+button {
+  background: #a3243b;
+  border: none;
+  padding: 24px 40px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  margin: 16px 0;
 }
 
-.box button {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    border-radius: 3px;
-    color: #ffffff;
-    background: #25d366;
+input {
+  background: #4B111B;
+  border: 2px solid #a3243b;
+  padding: 24px 40px;
+  color: white;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #f2545c;
 }
 
 .qr-code {
