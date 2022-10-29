@@ -5,3 +5,9 @@ document.querySelector("#submit").addEventListener("click", (event) => {
   url = uri + document.querySelector("#url").value;
   window.location.href = url;
 });
+
+submit.addEventListener("click", () => {
+  let inputValue = input.value;
+  if (!inputValue) {
+    return alert("Please enter a text or URL!");
+  }
