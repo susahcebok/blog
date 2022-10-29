@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "QR Codr Generator"
+title:  "QR Code Generator"
 date:   2018-02-02 12:26:40 +0300
 ---
 <p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
@@ -10,23 +10,13 @@ date:   2018-02-02 12:26:40 +0300
 <p>Klik kanan dan save untuk PC atau sentuh dan tahan lalu download image untuk smartphone jika link 'Download' mati.</p>
 
 <p>
-<form action="" id="form">
-<label for="input-text">Enter some text below to generate QR code:</label>
-<input type="text" class="form-control" placeholder="Enter any text" name="input-text" required autocomplete="off" id="input-text" oninput="setCustomValidity('')">
-<p>
-<button type="submit" class="btn btn-primary mt-3 align-center">Submit</button>
-</p>
-</form>
-</p>
-
-<div class="d-none" id="result">
-<p id="qr-code-for"></p>
-<a type="button" class="btn green" id="download">UNDUH</a>
-</div>
-
-<p>
-<img id="qr-code" src="" alt="">
-<canvas id="img-canvas" class="d-none" width="150" height="150"></canvas>
+<form action="#" id="qrcode">
+    <fieldset>
+      <legend>Get QR code</legend>
+      <input type="text" name="url" id="url" placeholder="domainname.nl#1234">
+      <input type="submit" id="submit" value="Get it">
+    </fieldset>
+  </form>
 </p>
 
 <script src='/assets/js/qrcode.js'></script>
