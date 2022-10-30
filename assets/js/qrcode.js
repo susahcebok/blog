@@ -6,7 +6,7 @@ const image = document.querySelector(".qr");
 genBtn.addEventListener("click", () => {
   let inputValue = input.value;
   if (!inputValue) {
-    return alert("Please enter a text or URL!");
+    return alertify.error('Harap masukkan teks atau URL!'); // alert("Please enter a text or URL!");
   }
   genBtn.innerHTML = 'Converting <i class="fa-solid fa-sync fa-spin"></i>';
   image.src = `https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=350x350&chl=${inputValue}`;
