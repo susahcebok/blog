@@ -202,8 +202,7 @@ canvas {
   display: block;
 }
 textarea, input {
-  padding:10px;
-	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    padding:10px;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
