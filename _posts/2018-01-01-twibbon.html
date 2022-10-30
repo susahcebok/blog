@@ -13,13 +13,18 @@ date:   2018-01-01 23:22:40 +0300
 
 <p>Pastikan gambar yang di upload memiliki ukuran.</p>
 
+<p>
 <label class="upload">
 <input id="image_input" type="file" multiple/>
 </label>
+</p>
 
-<span id="error"></span>
+<p>
+<div class="cvs">
 <canvas id="canvas"></canvas>
-<br>
+</div>
+</p>
+
 <button class="btn blue" onclick="generate()">PRATINJAU</button>
 <button class="btn green" onclick="download()" id="download" disabled>UNDUH</button>
 <button class="btn red" id="cancel" onclick="location.reload()">HAPUS</button>
