@@ -204,7 +204,7 @@ canvas {
 /* password */
 
 .pwd {
-    width: 100%;
+    width: 300px;
     height: 200px;
     display: flex;
     justify-content: space-evenly;
@@ -213,7 +213,7 @@ canvas {
 }
 
 .pwd p {
-    color: #ddd;
+    color: #000;
     font-size: 24px;
 }
 
@@ -225,7 +225,7 @@ canvas {
     outline: none;
     border: 2px solid #ddd;
     border-radius: 8px;
-    color: #ddd;
+    color: #000;
     font-size: 18px;
     letter-spacing: 1px;
     transition: 0.2s;
@@ -266,7 +266,7 @@ canvas {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: #4dff4d;
+    color: #000;
     transition: 0.2s linear;
     z-index: -1;
 }
