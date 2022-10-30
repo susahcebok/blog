@@ -7,7 +7,7 @@ let btnDownload = document.getElementById('download');
 let reader = new FileReader();
 let target = new Image();
 let target2 = new Image();
-let image = document.getElementById('thefile');
+let image = document.getElementById('image_input');
 
 c.canvas.width = 1024;
 c.canvas.height = 1024;
