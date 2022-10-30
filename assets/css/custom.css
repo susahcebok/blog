@@ -198,6 +198,6 @@ flex-wrap: wrap;
     cursor: pointer;
     box-shadow:5px 5px #deb3e0
 }
-#cvs {
+canvas {
   display: none;
 }
