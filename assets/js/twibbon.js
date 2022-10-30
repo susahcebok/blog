@@ -49,7 +49,7 @@ let init = () => {
 }
 
 let setTwibbon = () => {
-    target2.src = 'https://susahcebok.github.io/blog/assets/img/twibbon.png';
+    target2.src = '/assets/img/twibbon.png';
 }
 
 let imageReaderOnLoad = () => {
