@@ -212,7 +212,6 @@ textarea, input {
 
 .tooltip {
   position: relative;
-  text-decoration: underline dotted;
   cursor: help;
 }
 
@@ -233,7 +232,7 @@ textarea, input {
 .tooltip::before {
   content: attr(data-tooltip);
   z-index: 2;
-  width: 210px;
+  width: 100px;
   color: #fff;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
