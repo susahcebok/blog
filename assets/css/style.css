@@ -108,6 +108,7 @@ a:focus {
 img,canvas {
         width: 100%;
         height: auto;
+        display: block;
 }
 svg { 
         position: fixed; 
