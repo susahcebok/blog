@@ -65,10 +65,7 @@ let enableBtnDownload = () => {
 let generate = () => {
     
     if(image.files[0] === undefined) 
-       new jBox('Notice', {
-       content: '<i class="fa fa-warning" style="color:white;"></i> Gambar tidak boleh kosong!',
-       color: 'red'
-       });
+       alert("Gambar tidak boleh kosong!");
 
     else{
         destroyInterval();                               
