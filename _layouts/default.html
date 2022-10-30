@@ -8,7 +8,7 @@
     <meta name="description"
     content="{% if page.description %}{{ page.description }}{% else %}{{ site.name }}{% endif %}.">
 
-    <link rel="icon" href='/favicon.ico'>
+    <link rel="icon" href='{{ site.url }}/favicon.ico'>
     <title>
         {% if page.title %}
             {{ page.title }}
@@ -18,12 +18,12 @@
     </title>
 
     {% if site.highlighter %}
-        <link rel='stylesheet' href='/assets/css/style.css' type='text/css'>
-        <link rel='stylesheet' href='/assets/css/custom.css' type='text/css'>
+        <link rel='stylesheet' href='{{ site.url }}/assets/css/style.css' type='text/css'>
+        <link rel='stylesheet' href='{{ site.url }}/assets/css/custom.css' type='text/css'>
     {% endif %}
     
     
-    <script src='/assets/js/jquery.js'></script>
+    <script src='{{ site.url }}/assets/js/jquery.js'></script>
     <script src="https://kit.fontawesome.com/28157a8fdb.js" crossorigin="anonymous"></script>
 
 </head>
