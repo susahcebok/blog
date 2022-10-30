@@ -11,22 +11,17 @@ date:   2018-01-01 23:22:40 +0300
 
 <p>Klik kanan dan save untuk PC atau sentuh dan tahan lalu download image untuk smartphone jika link 'Download' mati.</p>
 
-<img id="preview" src='/assets/img/no-image.png'/>
-<img id="twibbon" src='/assets/img/twibbon.png' style='display: none'/>
-<br>
-
 <p>Pastikan gambar yang di upload memiliki ukuran.</p>
 
-
 <label class="upload">
-<input id="fileInput" type="file" multiple/>
+<input id="image_input" type="file" multiple/>
 </label>
 
 <span id="error"></span>
-<canvas id="susahcebok" style="width: 300px; height: 300px; display: none"></canvas>
+<canvas id="canvas"></canvas>
 <br>
-<button class="btn blue" id="pratinjau" onclick="drawImage()">PRATINJAU</button>
-<a class="btn green" href='#' id="unduh" download="download.png" style="display: none">UNDUH</a>
+<button class="btn blue" onclick="generate()">PRATINJAU</button>
+<button class="btn green" onclick="download()" id="download" disabled>UNDUH</button>
 <button class="btn red" id="cancel" onclick="location.reload()">HAPUS</button>
 
 <script src='/assets/js/twibbon.js'></script>
