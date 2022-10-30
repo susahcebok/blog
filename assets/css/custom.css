@@ -273,4 +273,5 @@ canvas {
 
 .pwd input.active ~ .buttons #btncp::before {
     left: -70px;
+    color: #000;
 }
