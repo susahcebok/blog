@@ -199,5 +199,5 @@ flex-wrap: wrap;
     box-shadow:5px 5px #deb3e0
 }
 canvas {
-  display: none;
+  display: block;
 }
