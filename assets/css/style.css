@@ -167,3 +167,8 @@ svg {
 @keyframes blinker { 
   from { opacity: 1.0; } to { opacity: 0.0; }
 }
+header {
+  width: 100%;
+  background: #f1f1f1;
+  border-bottom: 1px solid #f0f0f0;
+}
