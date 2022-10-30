@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <meta name="description"
-    content="{{ page_description }}">
+    content="{% if page.title %} {{ page.title }} {% else %} {{ site.name }} &mdash; {{ page.description }} {% endif %}">
 
     <link rel="icon" href='/favicon.ico'>
     <title>
