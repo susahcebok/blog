@@ -76,6 +76,3 @@ let generate = () => {
         init();
     }
 }
-
-document.getElementById("cvs").style.display = "block";
-  }
