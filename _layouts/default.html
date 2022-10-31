@@ -40,20 +40,7 @@
 
 {{ content }}
 
-
-<div class="share">
-<div class="btn js-btn-open">
-<i class="fa fa-retweet" aria-hidden="true"></i>
-</div>
-<div class="social js-btns-share">
-<ul>
-<li class="js-btns-share"><a href="https://www.facebook.com/sharer.php?u=https://codepen.io/Cristiano123/pen/dXQNVj" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-<li class="js-btns-share"><a href="https://twitter.com/share?text=https://codepen.io/Cristiano123/pen/dXQNVj" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-<li class="js-btns-share"><a href="https://plus.google.com/share?url=https://codepen.io/Cristiano123/pen/dXQNVj" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-<li class="js-btns-share"><a href="https://www.linkedin.com/cws/share?url=https://codepen.io/Cristiano123/pen/dXQNVj" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-</ul>
-</div>
-</div>
+<p class="good-share" data-share-title="{% if page.title %}{{ page.title }}{% else %}{{ site.name }} &mdash; {{ site.description }}{% endif %}" data-share-text="{% if page.description %}{{ page.description }}{% else %}{{ site.name }}{% endif %}" data-share-url="https://github.com/christophery">Share</button>></p>
 
 <!-- bearror logo ✖ᴥ✖ -->
 <a href="https://www.facebook.com/bungferry.wa">
