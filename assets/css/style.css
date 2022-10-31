@@ -157,7 +157,10 @@ svg {
        padding: 0;
        border: 0;
 }
-
+/* copy */
+::-moz-selection{background:#ccc}
+::selection{background:#ccc}
+/* blinker */
 .blinker { 
   animation-name: blinker;
   animation-iteration-count: infinite;
