@@ -158,8 +158,8 @@ svg {
        border: 0;
 }
 /* copy */
-::-moz-selection{background:#ccc}
-::selection{background:#ccc}
+::-moz-selection{background:#F0FF42}
+::selection{background:#F0FF42}
 /* blinker */
 .blinker { 
   animation-name: blinker;
