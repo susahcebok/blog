@@ -1,17 +1,14 @@
-if (!navigator.share) {
-    throw new Error('Web Share API is not supported.');
-}
-
-const unsupported = document.querySelector('.unsupported');
-unsupported.remove();
-
-const share = document.querySelector('.share');
-
-share.onclick = e => {
+const button = document.getElementById('shared');
+button.addEventListener('click', function(evt){
+  evt.preventDefault();
+  if (navigator.share !== undefined) {
     navigator.share({
-        title: 'OHASTA.GA',
-        text: 'Just Another A Blog',
-        url: ''
-    });
-};
-
+      title: 'OHASTA.GA - JUST ANOTHER A BLOG',
+      url  : 'https://ohasta.ga/'
+    })
+    .then(() => console.log('Shared successfully'))
+    .catch((error) => console.log('An error has occurred'));
+  } else {
+    console.log('Your browser doesn\'t support Web Share API');
+  }
+}, false)
