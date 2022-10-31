@@ -334,7 +334,7 @@ textarea, input {
 }
 .share .btn i {
   cursor: pointer;
-  color: #fff;
+  color: #000;
 }
 .share .social.open ul li {
   opacity: 1;
