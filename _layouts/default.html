@@ -40,7 +40,7 @@
 
 {{ content }}
 
-<p class="good-share" data-share-title="{% if page.title %}{{ page.title }}{% else %}{{ site.name }} &mdash; {{ site.description }}{% endif %}" data-share-text="{% if page.description %}{{ page.description }}{% else %}{{ site.name }}{% endif %}" data-share-url="https://github.com/christophery">Share</button>></p>
+<p class="good-share" data-share-title="{% if page.title %}{{ page.title }}{% else %}{{ site.name }} &mdash; {{ site.description }}{% endif %}" data-share-text="{% if page.description %}{{ page.description }}{% else %}{{ site.name }}{% endif %}" data-share-url="{{ page.title }}{{ page.shortUrl }}">Share...</p>
 
 <!-- bearror logo ✖ᴥ✖ -->
 <a href="https://www.facebook.com/bungferry.wa">
