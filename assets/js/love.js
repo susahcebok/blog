@@ -4,13 +4,13 @@ function lovecalculator(){
   var sname = document.getElementById('sname').value;
 
    if (fname.length <=2 ) {
-   alert('Min lenght is 3')
+   alert('Panjang nama minimal 3 huruf!')
   }
   else if(!isNaN(fname)){
    alert('Nomor tidak diperbolehkan!');
   }
   else if (sname.length <=2 ) {
-   alert('Min lenght is 3');
+   alert('Panjang nama minimal 3 huruf!');
   }
   else if(!isNaN(sname)){
    alert('Nomor tidak diperbolehkan!');
