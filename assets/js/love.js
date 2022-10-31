@@ -4,21 +4,21 @@ function lovecalculator(){
   var sname = document.getElementById('sname').value;
 
    if (fname.length <=2 ) {
-   alert('Panjang nama minimal 3 huruf!')
+   alertify.error('Panjang nama minimal 3 huruf!')
   }
   else if(!isNaN(fname)){
-   alert('Nomor tidak diperbolehkan!');
+   alertify.error('Nomor tidak diperbolehkan!');
   }
   else if (sname.length <=2 ) {
-   alert('Panjang nama minimal 3 huruf!');
+   alertify.error('Panjang nama minimal 3 huruf!');
   }
   else if(!isNaN(sname)){
-   alert('Nomor tidak diperbolehkan!');
+   alertify.error('Nomor tidak diperbolehkan!');
   }
   else{
   var lovelevel = Math.random() * 100;
   lovelevel = Math.floor(lovelevel);
-  alert('Tingkat cintamu adalah' + ' ' + lovelevel + '%');
+  alertify.success('Tingkat cintamu adalah' + ' ' + lovelevel + '%');
   }
   
  }
