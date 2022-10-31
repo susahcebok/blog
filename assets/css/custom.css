@@ -1,4 +1,4 @@
-/* button.css */
+ /* button.css */
 
 *:focus{
   outline:0;
@@ -315,8 +315,8 @@ textarea, input {
 
 .share {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: -10px;
+  right: -10px;
   text-align: center;
 }
 .share .btn {
@@ -359,5 +359,5 @@ textarea, input {
   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 .share .social ul li i {
-  color: #555;
+  color: #000;
 }
