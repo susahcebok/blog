@@ -4,7 +4,7 @@ button.addEventListener('click', function(evt){
   if (navigator.share !== undefined) {
     navigator.share({
       title: 'OHASTA.GA - JUST ANOTHER A BLOG',
-      url  : '{{ site.url }}{{ post.url }}'
+      url  : 'https://ohasta.ga/'
     })
     .then(() => console.log('Shared successfully'))
     .catch((error) => console.log('An error has occurred'));
