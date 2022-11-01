@@ -15,7 +15,7 @@ var loadFile = function(event) {
   };
 
   function gen() {
-      alertify.success('Klik Oke untuk membuat twibbon!'); 
+      alertify.success('Twibbon berhasil dibuat!'); 
       
 
       // Mensetting Variabel
