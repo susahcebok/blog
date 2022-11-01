@@ -1,5 +1,3 @@
-// script.js
-
 var loadFile = function(event) {
     var output = document.getElementById('avatar');
     output.src = URL.createObjectURL(event.target.files[0]);
@@ -17,11 +15,8 @@ var loadFile = function(event) {
   };
 
   function gen() {
-     // alerty.alert('<i class="fa fa-check-square-o" style="color:green;"></i> Twibbon berhasil dibuat!'); //
-      new jBox('Notice', {
-       content: '<i class="fa fa-check-circle-o" style="color:white;"></i> Twibbon berhasil dibuat!',
-       color: 'blue'
-       });
+      alerty.alert('Klik Oke untuk membuat twibbon!'); 
+      
 
       // Mensetting Variabel
         var img1 = document.getElementById('avatar');
