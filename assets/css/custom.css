@@ -311,3 +311,11 @@ textarea, input {
   50%{opacity:0;}
   100%{opacity:1;}
 }
+.hide {
+	display: none;
+}
+.options label,
+.options input{
+	width:4em;
+	padding:0.5em 1em;
+}
