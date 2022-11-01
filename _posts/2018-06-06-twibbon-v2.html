@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Twibbon Generator v2"
+description: "Unggah karya seni bingkai Anda dengan latar belakang transparan sebagai File .PNG terpisah, dengan ukuran kurang dari 1 MB"
+date:   2018-01-01 23:22:40 +0300
+---
+
+<p>Unggah karya seni bingkai Anda dengan latar belakang transparan sebagai File .PNG terpisah, dengan ukuran kurang dari 1 MB.</p>
+
+<p>Upload gambar yang ingin dijadikan twibbon lalu klik 'Pratinjau'.</p>
+
+<p>Klik kanan dan save untuk PC atau sentuh dan tahan lalu download image untuk smartphone jika link 'Download' mati.</p>
+
+<p>Pastikan gambar yang di upload memiliki ukuran.</p>
+
+<p>
+<p>Anda dapat mengupload berbagai ukuran gambar dari hard drive Anda.</p>
+<label class="upload">
+<input type="file" accept="image/*" onchange="loadFile(event)" multiple/>
+</label>
+</p>
+
+<p>
+<p>Unggah karya seni bingkai Anda dengan latar belakang transparan sebagai File .PNG terpisah, dengan ukuran kurang dari 1 MB.</p>
+<label class="upload">
+<input type="file" accept="image/*" onchange="loadTemplate(event)" multiple/>
+</label>
+</p>
+
+<button class="btn blue" onclick="generate()">PRATINJAU</button>
+<button class="btn green" onclick="download()" id="download" disabled>UNDUH</button>
+<!--<button class="btn red" id="cancel" onclick="location.reload()">HAPUS</button>-->
+
+<p>
+<canvas id="canvas"></canvas>
+</p>
+
+<script src='/assets/js/twibbon-v2.js'></script>
