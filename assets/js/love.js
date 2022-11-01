@@ -22,7 +22,6 @@ function lovecalculator(){
   document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' Tingkat kecocokan cintamu adalah ' + lovelevel + '%' ;
 
 //  alertify.success('Tingkat cintamu adalah' + ' ' + lovelevel + '%');
-    alertify.alert('Love Calculator', '<span id='score'></span>', function(){ alertify.success('Ok'); });
   }
   
  }
