@@ -19,7 +19,7 @@ function lovecalculator(){
   var lovelevel = Math.random() * 100;
   lovelevel = Math.floor(lovelevel);
 //  alertify.success('Tingkat cintamu adalah' + ' ' + lovelevel + '%');
-  alertify.alert('Love Calculator', '${fname.value} and ${sname.value} Tingkat cintamu adalah' + ' ' + lovelevel + '%', function(){ alertify.success('Ok'); });
+  alertify.alert('Love Calculator', 'Tingkat cintamu adalah' + ' ' + lovelevel + '%', function(){ alertify.success('Ok'); });
 
   }
   
