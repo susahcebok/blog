@@ -17,16 +17,11 @@ function lovecalculator(){
   }
   else{
   var lovelevel = Math.random() * 100;
-  lovelevel = Math.floor(lovelevel)+1;
+  lovelevel = Math.floor(lovelevel);
 
-  document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' Tingkat kecocokan cintamu adalah ' + lovelevel + '%' ;
+  document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' memiliki peluang ' + lovelevel + '% untuk cocok!';
 
 //  alertify.success('Tingkat cintamu adalah' + ' ' + lovelevel + '%');
   }
   
  }
-
-  document.getElementById('submit').addEventListener('click', function(e) {
-		e.preventDefault();
-		calculate();
-}, false);
