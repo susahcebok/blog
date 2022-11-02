@@ -16,8 +16,9 @@ function lovecalculator(){
    alertify.error('Nomor tidak diperbolehkan!');
   }
   else{
-  var lovelevel = Math.random() * 100;
-  lovelevel = Math.floor(lovelevel);
+    var lovelevel= Math.floor(Math.random()*100)+1;
+//  var lovelevel = Math.random() * 100;
+//  lovelevel = Math.floor(lovelevel);
 
   document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' memiliki peluang ' + lovelevel + '%' + ' untuk cocok! ';
 
