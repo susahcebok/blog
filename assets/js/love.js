@@ -19,7 +19,7 @@ function lovecalculator(){
   var lovelevel = Math.random() * 100;
   lovelevel = Math.floor(lovelevel);
 
-  document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' memiliki peluang ' + lovelevel + '% untuk cocok!';
+  document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' memiliki peluang ' + lovelevel + '%';
 
 //  alertify.success('Tingkat cintamu adalah' + ' ' + lovelevel + '%');
   }
