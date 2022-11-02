@@ -16,8 +16,8 @@ function lovecalculator(){
    alertify.error('Nomor tidak diperbolehkan!');
   }
   else{
-  var lovelevel = Math.random() * 100+1;
-  lovelevel = Math.floor(lovelevel);
+  var lovelevel = Math.random() * 100;
+  lovelevel = Math.floor(lovelevel)+1;
 
   document.getElementById("score").innerHTML = fname + ' dan ' + sname + ' Tingkat kecocokan cintamu adalah ' + lovelevel + '%' ;
 
