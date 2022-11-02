@@ -16,20 +16,19 @@ date:   2021-11-01 23:22:40 +0300
 <p>
 <p>Anda dapat mengupload berbagai ukuran gambar dari hard drive Anda.</p>
 <label class="upload">
-<input type="file" accept="image/*" onchange="loadFile(event)" multiple/>
+<input type="file" accept="image/*" onchange="loadFile(event)" data-tooltip="Unggah Gambar" multiple/>
 </label>
 </p>
 
 <p>
 <p>Unggah karya seni bingkai Anda dengan latar belakang transparan sebagai File .PNG terpisah, dengan ukuran kurang dari 1 MB.</p>
 <label class="upload">
-<input type="file" accept="image/*" onchange="loadTemplate(event)" multiple/>
+<input type="file" accept="image/*" onchange="loadTemplate(event)" data-tooltip="Unggah Bingkai" multiple/>
 </label>
 </p>
 
 <button class="btn blue" onclick="gen()">PRATINJAU</button>
 <button class="btn green" id="btndownload">UNDUH</button>
-<!--<button class="btn red" id="cancel" onclick="location.reload()">HAPUS</button>-->
 
 <p>
 <img id="avatar" style="display: none" src="/assets/img/no-image.png"/>
