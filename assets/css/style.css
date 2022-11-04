@@ -184,7 +184,7 @@ header {
 }
 .copyright span {
   line-height: 36px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #999;
   margin-right: 10px;
   font-weight: 300;
 }
