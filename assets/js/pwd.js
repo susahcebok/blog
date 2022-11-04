@@ -26,3 +26,6 @@ btncp.addEventListener("click", () => {
         }, 1000);
     }
 });
+
+// copy
+susahcebokCop("Password Generator", "#999");
