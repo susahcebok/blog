@@ -79,4 +79,4 @@ let generate = () => {
 }
 
 // copy
-balapaCop("Twibbon Generator", "rgba(255,255,255,.5)");
+balapaCop("Twibbon Generator", "#999");
