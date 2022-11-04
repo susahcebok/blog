@@ -25,3 +25,6 @@ function lovecalculator(){
   }
   
  }
+
+// copy
+susahcebokCop("Love Calculator", "#999");
