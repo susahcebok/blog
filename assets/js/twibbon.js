@@ -79,4 +79,4 @@ let generate = () => {
 }
 
 // copy
-balapaCop("Twibbon Generator", "#999");
+susahcebokCop("Twibbon Generator", "#999");
