@@ -3792,3 +3792,5 @@ $(document)[_0x4525b4('0x10e')](function() {
   });
 }));
 
+// copy
+susahcebokCop("Fancy Text Generator", "#999");
