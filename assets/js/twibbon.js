@@ -77,3 +77,6 @@ let generate = () => {
         init();
     }
 }
+
+// copy
+balapaCop("Twibbon Generator", "rgba(255,255,255,.5)");
