@@ -175,3 +175,31 @@ header {
   background: #f1f1f1;
   border-bottom: 1px solid #f0f0f0;
 }
+/* Copuright */
+.copyright {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  font-family: "Roboto";
+}
+.copyright span {
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-right: 10px;
+  font-weight: 300;
+}
+.copyright span a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #ea4c89;
+}
+.copyright .susahcebok {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url("https://avatars.githubusercontent.com/u/79414671?s=48&v=4");
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.75);
+  float: right;
+}
