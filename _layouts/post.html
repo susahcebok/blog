@@ -4,11 +4,11 @@ layout: default
 
 <p>&larr; <a href='{{ site.url }}/'>Home</a> / {{ page.title }}{{ page.shortUrl }} / <a id='share'>Share</a></p>
 
-<h1>{{ page.title }}{{ page.shortUrl }}</h1>
+<h1 class='notranslate'>{{ page.title }}{{ page.shortUrl }}</h1>
         
 <p>{{ content }}</p>
 
 <!-- that’s all folks! -->
-<div class="copyright"><span>{{ page.title }}{{ page.shortUrl }} by</span><a href="https://www.facebook.com/bungferry.wa" class="susahcebok"></a></div>
+<div class='copyright'><span>{{ page.title }}{{ page.shortUrl }} by</span><a href='https://www.facebook.com/bungferry.wa' class='susahcebok'></a></div>
    
 {% if site.disqus-id %} {% include comments.html %} {% endif %}
