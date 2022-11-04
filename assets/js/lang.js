@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByTagName('body')[0].appendChild(translateElement);
 
   var script = document.createElement('script');
-  script.src = 'assets/js/translate.js';
+  script.src = '/assets/js/translate.js';
   script.type = 'text/javascript';
   document.getElementsByTagName('head')[0].appendChild(script);
 
