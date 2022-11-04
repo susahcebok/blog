@@ -67,3 +67,6 @@ var loadFile = function(event) {
         dwn.onclick = function(){
         download(canvas, 'twibbon-by-ferry-ayunda.png');
     };
+
+// copy
+susahcebokCop("Twibbon Generator v2", "#999");
