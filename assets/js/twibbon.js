@@ -77,6 +77,3 @@ let generate = () => {
         init();
     }
 }
-
-// copy
-susahcebokCop("Twibbon Generator", "#999");
