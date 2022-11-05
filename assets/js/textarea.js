@@ -1,65 +1,21 @@
-// Targets all textareas with class "txta"
-let textareas = document.querySelectorAll('.txta'),
-    hiddenDiv = document.createElement('div'),
-    content = null;
+var autoExpand = function (field) {
+  field.style.height = "inherit";
+  var computed = window.getComputedStyle(field);
+  var height =
+    parseInt(computed.getPropertyValue("border-top-width"), 10) +
+    parseInt(computed.getPropertyValue("padding-top"), 10) +
+    field.scrollHeight +
+    parseInt(computed.getPropertyValue("padding-bottom"), 10) +
+    parseInt(computed.getPropertyValue("border-bottom-width"), 10);
 
-// Adds a class to all textareas
-for (let j of textareas) {
-  j.classList.add('txtstuff');
-}
+  field.style.height = height + "px";
+};
 
-// Build the hidden div's attributes
-
-// The line below is needed if you move the style lines to CSS
-// hiddenDiv.classList.add('hiddendiv');
-
-// Add the "txta" styles, which are common to both textarea and hiddendiv
-// If you want, you can remove those from CSS and add them via JS
-hiddenDiv.classList.add('txta');
-
-// Add the styles for the hidden div
-// These can be in the CSS, just remove these three lines and uncomment the CSS
-hiddenDiv.style.display = 'none';
-hiddenDiv.style.whiteSpace = 'pre-wrap';
-hiddenDiv.style.wordWrap = 'break-word';
-
-// Loop through all the textareas and add the event listener
-for(let i of textareas) {
-  (function(i) {
-    // Note: Use 'keyup' instead of 'input'
-    // if you want older IE support
-    i.addEventListener('input', function() {
-      
-      // Append hiddendiv to parent of textarea, so the size is correct
-      i.parentNode.appendChild(hiddenDiv);
-      
-      // Remove this if you want the user to be able to resize it in modern browsers
-      i.style.resize = 'none';
-      
-      // This removes scrollbars
-      i.style.overflow = 'hidden';
-
-      // Every input/change, grab the content
-      content = i.value;
-
-      // Add the same content to the hidden div
-      
-      // This is for old IE
-      content = content.replace(/\n/g, '<br>');
-      
-      // The <br ..> part is for old IE
-      // This also fixes the jumpy way the textarea grows if line-height isn't included
-      hiddenDiv.innerHTML = content + '<br style="line-height: 0;">';
-
-      // Briefly make the hidden div block but invisible
-      // This is in order to read the height
-      hiddenDiv.style.visibility = 'hidden';
-      hiddenDiv.style.display = 'block';
-      i.style.height = hiddenDiv.offsetHeight + 'px';
-
-      // Make the hidden div display:none again
-      hiddenDiv.style.visibility = 'visible';
-      hiddenDiv.style.display = 'none';
-    });
-  })(i);
-}
+document.addEventListener(
+  "input",
+  function (event) {
+    if (event.target.tagName.toLowerCase() !== "textarea") return;
+    autoExpand(event.target);
+  },
+  false
+);
