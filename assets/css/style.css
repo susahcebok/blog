@@ -203,3 +203,15 @@ header {
   border: 5px solid rgba(255, 255, 255, 0.75);
   float: right;
 }
+/* pre */
+pre {
+  user-select: all;
+}
+div {
+  background: #b3ebf5;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  color: #666;
+  line-height: 1.5;
+}
