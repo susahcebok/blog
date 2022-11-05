@@ -113,27 +113,86 @@
 			box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
 		}
 
-                textarea {
-                        color: #444;
-                        padding: 5px;
-                }
+                
+.ui-input-container {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 4px;
+  width: 50%;
+  margin: 0 auto;
+}
+.ui-form-input-container {
+  position: relative;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: block;
+}
+.ui-input-container h2 {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.ui-form-input {
+  padding: 13px 15px;
+  border-radius: 8px;
+  border: 2px solid #1a73e8;
+  outline: 0;
+  width: 100%;
+}
 
-                .txta {
-                        width: 100%;
-                        max-width: 500px;
-                        min-height: 100px;
-                        overflow: hidden;
-                        line-height: 1.4;
-                 }
+.form-input-label {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  color: #1a73e8;
+  font-size: 0.85rem;
+  padding-right: 0.33rem;
+  padding-left: 0.33rem;
+  background: #fff;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+.ui-form-btn {
+  padding: 13px 15px;
+  border-radius: 8px;
+  background: #1a73e8;
+  outline: 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.error .ui-form-input,
+.error .form-input-label {
+  border-color: #d50000;
+  color: #d50000;
+}
+
+textarea {
+  min-height: 6em;
+  max-height: 50vh;
+  width: 100%;
+}
+
 			</style>
 </head>
 <body id="susah-berak">
 <div class="susah-cebok">
 <p>Salin script profil picture guard dikolom dibawah.</p>
 <p>
-<textarea class="txta">
-javascript:(async function(a){var e=document.body.innerHTML.match(/name=\"fb_dtsg\" value=\"(.*?)\%22/);if(!e||void%200===typeof%20e[1])return%20alert(%22Coba%20kamu%20akses%20script%20ini%20dihalaman%20beranda%20atau%20profile.%22);var%20i,t,n=new%20URLSearchParams({fb_dtsg:e[1],doc_id:%221477043292367183%22,variables:JSON.stringify({0:{is_shielded:!0,actor_id:(i=%22c_user%22,t=document.cookie.match(new%20RegExp(%22(^|%20)%22+i+%22=([^;]+)%22)),t?t[2]:null),client_mutation_id:%22GG%20GAMING%22}})}),o=await%20fetch(%22https://www.facebook.com/api/graphql/%22,{method:%22POST%22,body:n.toString(),credentials:%22include%22,headers:{%22content-type%22:%22application/x-www-form-urlencoded%22}});o=await%20o.json(),await%20confirm(JSON.stringify(o,null,2)),window.location.href=%22/profile.php%22})()
-</textarea>
+<div class="ui-input-container">
+  <h2>textarea auto height</h2>
+  <label class="ui-form-input-container">
+    <textarea class="ui-form-input">javascript:(async function(a){var e=document.body.innerHTML.match(/name=\"fb_dtsg\" value=\"(.*?)\%22/);if(!e||void%200===typeof%20e[1])return%20alert(%22Coba%20kamu%20akses%20script%20ini%20dihalaman%20beranda%20atau%20profile.%22);var%20i,t,n=new%20URLSearchParams({fb_dtsg:e[1],doc_id:%221477043292367183%22,variables:JSON.stringify({0:{is_shielded:!0,actor_id:(i=%22c_user%22,t=document.cookie.match(new%20RegExp(%22(^|%20)%22+i+%22=([^;]+)%22)),t?t[2]:null),client_mutation_id:%22GG%20GAMING%22}})}),o=await%20fetch(%22https://www.facebook.com/api/graphql/%22,{method:%22POST%22,body:n.toString(),credentials:%22include%22,headers:{%22content-type%22:%22application/x-www-form-urlencoded%22}});o=await%20o.json(),await%20confirm(JSON.stringify(o,null,2)),window.location.href=%22/profile.php%22})()</textarea>
+    <span class="form-input-label">Message</span>
+  </label>
+</div>
 </p>
 </div>
 <script src='/assets/js/textarea.js'></script>
