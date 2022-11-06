@@ -100,7 +100,7 @@
 			});
 		} else {
 			outputEl.innerHTML =
-				"<span class='error'>Please enter a valid URL incl. http(s)://</span>";
+				"<p class='error'>Please enter a valid URL incl. http(s)://</p>";
 		}
 	};
 
