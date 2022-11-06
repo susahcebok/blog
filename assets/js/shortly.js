@@ -108,7 +108,7 @@
 		buttonEl = document.querySelector("button#action"),
 		outputEl = document.querySelector("#output");
 
-	if (debug) inputEl.value = "https://codepen.io/pmk/pen/qgLdzJ";
+	if (debug) inputEl.value = "#";
 
 	buttonEl.addEventListener("mousedown", createShortUrl.bind(inputEl), false);
 	inputEl.addEventListener(
