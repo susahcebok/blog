@@ -418,3 +418,31 @@ textarea, input {
     padding-left: 6px;
   }
 }
+/* Shortly URL */
+#output {
+	margin-top: 1rem;
+}
+#output > span {
+	display: inline-block;
+	color: #68ff68;
+	animation: expandtext 0.4s ease-out;
+}
+#output > span.error {
+	color: #ff5b5b;
+}
+@keyframes expandtext {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	85% {
+		transform: scale(0.95);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
